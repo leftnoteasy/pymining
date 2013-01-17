@@ -1,0 +1,20 @@
+<输入训练数据>
+    分词
+    创建矩阵 -> 生成termDict (term->id, doc-count)
+                生成id -> term
+                生成class -> doc-count
+    feature selection -> 生成feature-black_list
+                         将需要的feature重新生成矩阵
+    naive bayes -> 输出term - prob, 生成model
+
+<输入测试数据>
+    分词
+    创建矩阵 -> 根据termDict进行生成矩阵
+    feature selection -> 根据feature-black_list 生成新的矩阵
+    naive bayes -> 根据model，进行预测，并且能够根据termDict等输出更详细的信息
+
+<Data Flow>
+    训练：
+        创建矩阵 -> Feature Selection -> naive bayes -> show result
+    测试：
+        创建矩阵 -> Feature Selection -> naive bayes -> show result

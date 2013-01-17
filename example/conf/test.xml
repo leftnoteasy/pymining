@@ -1,0 +1,48 @@
+<config>
+    <__segmenter__>
+        <main_dict>dict/dict.main</main_dict>
+    </__segmenter__>
+
+    <__matrix__>
+    </__matrix__>
+
+    <__global__>
+        <term_to_id>mining/term_to_id</term_to_id>
+        <id_to_term>mining/id_to_term</id_to_term>
+        <id_to_doc_count>mining/id_to_doc_count</id_to_doc_count>
+        <class_to_doc_count>mining/class_to_doc_count</class_to_doc_count>
+        <id_to_idf>mining/id_to_idf</id_to_idf>
+        <newid_to_id>mining/newid_to_id</newid_to_id>
+    </__global__>
+
+    <__filter__>
+        <rate>0.2</rate>
+        <method>max</method>
+        <log_path>mining/filter.log</log_path>
+        <model_path>mining/filter.model</model_path>
+    </__filter__>
+
+    <naive_bayes>
+        <model_path>mining/naive_bayes.model</model_path>
+        <log_path>mining/naive_bayes.log</log_path>
+    </naive_bayes>
+
+    <twc_naive_bayes>
+        <model_path>mining/naive_bayes.model</model_path>
+        <log_path>mining/naive_bayes.log</log_path>
+    </twc_naive_bayes>
+    
+    <smo_csvc>
+      <model_path>mining/smo_csvc.model</model_path>
+      <log_path>mining/smo_csvc.log</log_path>
+      <c>100</c>
+      <eps>0.001</eps>
+      <tolerance>0.000000000001</tolerance>
+      <times>50</times>
+      <kernel>
+        <name>RBF</name>
+        <parameters>10</parameters>
+      </kernel>
+      <cachesize>300</cachesize>
+    </smo_csvc>
+</config>
