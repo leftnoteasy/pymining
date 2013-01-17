@@ -1,8 +1,9 @@
 Objective
 ---------
-This is a platform writing in Python that can use variant data-mining algorithms to get results from a source (like matrix, text documents).
-Algorithms can using xml configuration to make them run one-by-one. E.g. at first, we may run PCA(principle components analysis) for feature selection, then we may run random forest for classification. 
-Now, algorithms are mainly design for tasks can be done in a single computer, good scalability of the architecture allows you in a very short period of time to complete the algorithm you want, and use it in your project(believe me, it's faster, better, and easier than Weka). The another important feature is this platfrom can support text classification or clustering operation very good.
+This is a platform writing in Python that can use variant data-mining algorithms to get results from a source (like matrix, text documents). Algorithms can using xml configuration to make them run one-by-one. <p>
+E.g. at first, we may run PCA(principle components analysis) for feature selection, then we may run random forest for classification. 
+Now, algorithms are mainly design for tasks can be done in a single computer, good scalability of the architecture allows you in a very short period of time to complete the algorithm you want, and use it in your project (believe me, it's faster, better, and easier than Weka). <p>
+The another important feature is this platfrom can support text classification or clustering operation very good.
 
 
 Get start
